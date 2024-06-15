@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="contenedor">
+        <h3>Ejercicio 1</h3>
+        <hr>
+        <div id="resultado">
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                for (let i = 1; i <= 6; i++) {
+                let heading = document.createElement('h' + i);
+                heading.innerText = 'Encabezado de nivel ' + i;
+                document.body.appendChild(heading);
+                }
+                });
+            </script>
+        </div>
+    </div>
+</body>
+</html>

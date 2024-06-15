@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="contenedor">
+        <h3>Ejercicio 3</h3>
+        <hr>
+        <div id="resultado">
+            <script>
+                function calcularMediaAritmeticaDePares(){
+                    let numerosPares = [2,4,6,8];
+                    let suma = 0;
+                    let i = 0;
+
+                    while(i < numerosPares.length){
+                        suma += numerosPares[i];
+                        i++;
+                    }
+                    
+                    let mediaAritmetica = suma / numerosPares.length;
+                    document.write("Los primeros cuatro números pares son: " + numerosPares.join(", ")+"<br>");
+                    document.write("La suma de los números pares es: " + suma + "<br>");
+                    document.write("La media aritmética de los números pares es: " + mediaAritmetica);
+                }
+                calcularMediaAritmeticaDePares()
+            </script>
+        </div>
+    </div>
+</body>
+</html>
